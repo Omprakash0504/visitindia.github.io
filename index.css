@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100hw;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)) ,url(./taj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.2);
+    color: aliceblue;
+    align-items: center;
+
+}
+.menue{
+    display: flex;
+    gap: 1rem;
+    color: aliceblue;
+    text-transform: uppercase;
+    width: 40%;
+    justify-content: space-around;
+
+}
+.menue a{
+    width: 25%;
+    text-decoration: none;
+    color: aliceblue;
+}
+.menue a:hover{
+    color:aquamarine ;
+}
+.menue a:first-child{
+    color: aquamarine;
+}
+.logo{
+    width: 25%;
+    text-align: center;
+}
+main{
+    width: 100%;
+    height:85vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+
+}
+section{
+
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 3px black;
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow:3px 2px 5px black ;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 20px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 39px;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition:all 0.5 ease ;
+}
+section .btnone{
+    background: #fff;
+    color: #000;
+}
+section .btnone:hover{
+    background: aquamarine;
+    color: #000; 
+
+}
+section .btntwo
+{
+    background: aquamarine;
+    color: #000; 
+    
+}
+section .btntwo:hover{
+    background: #fff;
+    color: #000;
+    
+}
+.change-content::after
+{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: aqua;
+}
+@keyframes changetext{
+    0%{content: "Darheeling";}
+    20%{content: "Goa";}
+    40%{content: "Silicon vally";}
+    60%{content: "Edden garden";}
+    80%{content: "Chilika";}
+    100%{content: "Indiagate";}
+
+}
